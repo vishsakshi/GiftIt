@@ -1,5 +1,4 @@
-# GiftCart-clone
-Project: make a clone of https://www.giftcart.com/ site
+# GiftIt
 
 *This is an E-Commerce website which speciaizes in selling Gift all over the globe. The website provides Gifts for Multiple occasions.*
 
@@ -56,21 +55,3 @@ In this project we were tried to achieve a near to perfect clone of the original
 ### Limitations:
 All pages are not responsive yet , those pages are might not be properly visible on small screen devices.
 (Recomended Resolution: 1366 x 768 )
-  
-  ## Team Members and Contributors 😇 :
-
-- 👤 Shiva karthik
-  Github: https://github.com/Shiva-Karthik
-  
-- 👤 Yash
-  Github: https://github.com/yashrajillusion
-  
-- 👤 Sumit
-  Github: https://github.com/sumit6159
-  
-- 👤 Ankit Singh
-  Github: https://github.com/AnkitSingh60
-  
-- 👤 Mayur Shelar
-  Github: https://github.com/MS1098
-
