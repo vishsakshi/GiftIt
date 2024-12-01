@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search Product</title>
+    
+    <link rel="stylesheet" href="/styles/landing_page.css" />
+    <link rel="stylesheet" href="/styles/footer.css" />
+    <link rel="stylesheet" href="/styles/random.css" />
+
+    <script src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://style.giftcart.com/pub/media/favicon/stores/1/16x16.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="nav_bar_container">
+      <%- include("../public/components/navbar.html") %>
+    </div>
+
+    <div id="jewellery_container">
+      <% products.forEach(function(element) { %> %>
+      <a class="product_atag" href="/shopitem/<%- element._id %>">
+        <div class="divmain">
+          <div class="BS_img_div">
+            <img src="<%= element.image %>" alt="" />
+          </div>
+          <div class="main_titleDiv">
+            <div>
+              <%= element.product %>
+            </div>
+            <div class="heart_div">
+              <i class="far fa-heart"></i>
+            </div>
+          </div>
+
+          <div class="mrp_div">
+            <div>
+              <p>MRP (incl gst)</p>
+            </div>
+            <div class="mrp_div_inner_2">
+              <p>₹<%= element.price %></p>
+              <p>₹<%= element.price %></p>
+            </div>
+          </div>
+
+          <div class="start_div">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+        </div>
+      </a>
+      <!-- ejs loop ends here -->
+      <% }) %>
+    </div>
+    <!-- <div id="jewellery_info">
+      <h1>ONLINE FRAGRANCE SHOPPING</h1>
+      <p>
+        Be it a birthday or an anniversary, what you give to that special
+        someone in your life always holds great value and importance. It’s a
+        significant occasion which deserves the very best, and to do that, your
+        creative juices need to flow in overdrive. The online shopping trend is
+        fast catching on, thanks to an increasing number of web friendly people
+        today. You can sit in the living room and shop online, which is much
+        better than going to a store and traipsing around for hours. It saves
+        time, and enhances your options.
+      </p>
+      <p>
+        A gift you can never go wrong with for the special woman in your life is
+        a good perfume. Nothing would impress the opposite sex more than a good,
+        powerful scent. Giftcart brings you the all the latest international
+        brands, so that you can have the optimum online fragrance shopping
+        experience. A host of varied brands, which cut across all the
+        demographics, are there to get your hands on. Log on to giftcart to get
+        the best deals on your favorite brands like Tommy Hilfiger, Calvin Klein
+        as well as on big international brands like Prada, Azzaro, Davidoff and
+        Armani.
+      </p>
+      <p>
+        Online fragrance stores in India are a growing trend, and buying online
+        is a smart way to do your shopping. It gives you the option to be
+        creative about the kind of perfume you want to purchase and also, gives
+        you an almost unlimited number of options to do that. At giftcart,
+        customer satisfaction is the number one priority and we aim to please. A
+        variety of exciting deals on perfumes is available, since Fragrances are
+        a big part of the Online Beauty and personal care shopping experience.
+        It is one aspect where a fashion conscious individual is always willing
+        to go that extra mile.
+      </p>
+    </div> -->
+    <div class="footer" style="margin-top: 13%">
+      <%- include("../public/components/footer.html") %>
+    </div>
+  </body>
+</html>
+<script type="module">
+  import navbar_responsive from "/scripts/header.js";
+  await navbar_responsive();
+
+  let jewellery_div = document.getElementById("jewellery_container");
+  const url = "https://giftcartbackendapp.herokuapp.com/api/products";
+
+  ///////////////////////script for jewelry data ends here///////////////////////////
+  document.addEventListener("click", (e) => {
+    const isDropdownButton = e.target.matches("[data-dropdown-button]");
+    if (!isDropdownButton && e.target.closest("[data-dropdown]") != null)
+      return;
+
+    let currentDropdown;
+    if (isDropdownButton) {
+      currentDropdown = e.target.closest("[data-dropdown]");
+      currentDropdown.classList.toggle("active");
+    }
+
+    document.querySelectorAll("[data-dropdown].active").forEach((dropdown) => {
+      if (dropdown === currentDropdown) return;
+      dropdown.classList.remove("active");
+    });
+  });
+</script>
+<script src="/scripts/random.js"></script>

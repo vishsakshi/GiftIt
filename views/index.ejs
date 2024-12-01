@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+        Gifting Ideas from Online Gift Store India | Latest Gift Items From
+        Giftcart.com
+    </title>
+    <link rel="icon" type="image/x-icon" href="https://style.giftcart.com/pub/media/favicon/stores/1/16x16.png" />
+    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/slider.css">
+    <link rel="stylesheet" href="./styles/product_page.css">
+    <!-- <link rel="stylesheet" type="text/css" media="all"
+        href="https://style.giftcart.com/pub/static/_cache/merged/ba33a3ae125fe1c0ffec40f2b0073279.min.css" /> -->
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.js"></script> -->
+    <link rel="stylesheet" href="/styles/landing_page.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="nav_bar_container">
+        <%- include("../public/components/navbar.html") %>
+    </div>
+    <!--FRONT PAGE-->
+    <!-- <div id="Bs_slide_images">
+        <div class="main-container">
+            <div class="container">
+                <button onclick="backward()">  
+                <i class="fa fa-arrow-left" aria-hidden="true"></i>
+                </button>
+                <button onclick="forward()">
+                <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                </button>
+            </div>
+        </div>
+    </div> -->
+
+    <div id="head">
+        <h2>HATKE GIFTS</h2>
+        <div id="line"></div>
+        <h3>
+            <a href="/product/random?item=Personalised Gift">View More</a>
+        </h3>
+    </div>
+    <div id="Bs_container_div">
+        <% personalisedGift.forEach(function(element) { %>
+            <div class="Bs_item_div">
+                <div class="Bs_image_div">
+                    <a class="Bs_atag_Product" href="/shopitem/<%- element._id %>">
+                        <img src="<%= element.image %>" alt="">
+                    </a>
+                    <div class="Bs_slide_p">
+                        <div>
+                            <a href="/product/random?item=<%- element.category %>&sub=<%- element.sub_category %>">
+                                Similar Gifts
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="Bs_text_div">
+                    <div class="Bs_text_div_1">
+                        <p>
+                            <%= element.product %>
+                        </p>
+                        <p>
+                            <i class="fas fa-heart"></i>
+                        </p>
+                    </div>
+                    <div class="Bs_text_div_2">
+                        <p>MRP(incl gst)</p>
+                        <p>₹<%= element.price %>.00</p>
+                    </div>
+                </div>
+                <div class="Bs_star_image_div">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+            </div>
+            <% }) %>
+
+    </div>
+    <!--second container first-->
+    <div id="head">
+        <h2>OUR FAVOURITE PRODUCTS</h2>
+        <div id="line"></div>
+        <h3>
+            <a href="/product/random?item=Cards">Best and The Brightest</a>
+        </h3>
+    </div>
+    <div id="Bs_container_div">
+        <% purfumes.forEach(function(element) { %>
+            <div class="Bs_item_div">
+                <div class="Bs_image_div">
+                    <a class="Bs_atag_Product" href="/shopitem/<%- element._id %>">
+                        <img src="<%= element.image %>" alt="">
+                    </a>
+                    <div class="Bs_slide_p">
+                        <div>
+                            <a href="/product/random?item=<%- element.category %>&sub=<%- element.sub_category %>">
+                                Similar Gifts
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="Bs_text_div">
+                    <div class="Bs_text_div_1">
+                        <p>
+                            <%= element.product %>
+                        </p>
+                        <p>
+                            <i class="fas fa-heart"></i>
+                        </p>
+                    </div>
+                    <div class="Bs_text_div_2">
+                        <p>MRP(incl gst)</p>
+                        <p>₹<%= element.price %>.00</p>
+                    </div>
+                </div>
+                <div class="Bs_star_image_div">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+            </div>
+            <% }) %>
+
+    </div>
+    <!--first part third container-->
+
+    <div id="head">
+        <h2>VALENTINE DAY GIFT</h2>
+        <div id="line"></div>
+        <h3>
+            <a href="/product/random?item=Personalised Gift">
+                View More
+            </a>
+        </h3>
+    </div>
+
+    <div id="Bs_container_div">
+        <% valentine.forEach(function(element) { %>
+            <div class="Bs_item_div">
+                <div class="Bs_image_div">
+                    <a class="Bs_atag_Product" href="/shopitem/<%- element._id %>">
+                        <img src="<%= element.image %>" alt="">
+                    </a>
+                    <div class="Bs_slide_p">
+                        <div>
+                            <a href="/product/random?item=<%- element.category %>&sub=<%- element.sub_category %>">
+                                Similar Gifts
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="Bs_text_div">
+                    <div class="Bs_text_div_1">
+                        <p>
+                            <%= element.product %>
+                        </p>
+                        <p>
+                            <i class="fas fa-heart"></i>
+                        </p>
+                    </div>
+                    <div class="Bs_text_div_2">
+                        <p>MRP(incl gst)</p>
+                        <p>₹<%= element.price %>.00</p>
+                    </div>
+                </div>
+                <div class="Bs_star_image_div">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+            </div>
+            <% }) %>
+
+    </div>
+    <!--MID PART-->
+
+    <div id="head">
+        <h2>POPULAR THIS WEEK</h2>
+        <div id="line"></div>
+        <h3>
+            <a href="/product/jewellery">
+                Our most loved picks
+            </a>
+        </h3>
+    </div>
+    <div class="main">
+        <div>
+            <img onclick="functionDr('6214d3ac022c83ffdc983047')"
+                src="https://res.cloudinary.com/dqmzkayzb/image/upload/v1668082560/giftcard/asg4ybhzyxwcalricjel.jpg"
+                class="img_BS">
+        </div>
+        <div>
+            <img onclick="functionDr('6214d3ac022c83ffdc983048')"
+                src="https://res.cloudinary.com/dqmzkayzb/image/upload/v1668082536/giftcard/ayp0hvzq8iuvkh5wggsu.jpg"
+                class="img_BS">
+        </div>
+        <div>
+            <img onclick="functionDr('6214d3ac022c83ffdc983049')"
+                src="https://res.cloudinary.com/dqmzkayzb/image/upload/v1668082549/giftcard/re9dmsigocfgnofhuuxi.jpg"
+                class="img_BS">
+        </div>
+        <div>
+            <img onclick="functionDr('6214d3ac022c83ffdc98304a')"
+                src="https://res.cloudinary.com/dqmzkayzb/image/upload/v1668082502/giftcard/apet86dchutjxb5m1oyw.png"
+                class="img_BS">
+        </div>
+    </div>
+    <div id="head">
+        <h2>GET INSPIRED</h2>
+        <div id="line"></div>
+        <h3>
+            <a href="/product/random?item=plant">
+                Innovating Gifts Ideas for all
+            </a>
+        </h3>
+    </div>
+    <div class="box">
+        <div>
+            <img onclick="functionDr('6214d3ac022c83ffdc983071')"
+                src="https://res.cloudinary.com/dqmzkayzb/image/upload/v1668087933/giftcard/twfqf7biyfhxm0n4vku3.jpg"
+                id="img2">
+        </div>
+        <div>
+            <img onclick="functionDr('6214d3ac022c83ffdc98307e')"
+                src="https://res.cloudinary.com/dqmzkayzb/image/upload/v1668089358/giftcard/qpizmbsmfqv9i9znv3sh.jpg"
+                id="img2">
+        </div>
+        <div>
+            <img onclick="functionDr('6214d3ac022c83ffdc983084')"
+                src="https://res.cloudinary.com/dqmzkayzb/image/upload/v1668089288/giftcard/zy687howvgoeyfz9uelr.jpg"
+                id="img2">
+        </div>
+
+    </div>
+    <div id="head">
+        <h2>ON SALE</h2>
+        <div id="line"></div>
+        <h3>
+            <a href="/product/random?item=Cards">
+                View more
+            </a>
+        </h3>
+    </div>
+    <div id="Ms_container_div">
+        <% sale.forEach(function(element) { %>
+            <div class="Ms_item_div">
+                <div class="Ms_image_div">
+                    <a class="Bs_atag_Product" href="/shopitem/<%- element._id %>">
+                        <img src="<%= element.image %>" alt="">
+                    </a>
+                    <div class="Ms_slide_p">
+                        <div>
+                            <a href="/product/random?item=<%- element.category %>&sub=<%- element.sub_category %>">
+                                Similar Gifts
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="Ms_text_div">
+                    <div class="Ms_text_div_1">
+                        <p>
+                            <%= element.product %>
+                        </p>
+                        <p>
+                            <i class="fas fa-heart"></i>
+
+                        </p>
+                    </div>
+                    <div class="Ms_text_div_2">
+                        <p>MRP(incl gst)</p>
+                        <p>₹<%= element.price %>.00</p>
+                    </div>
+                </div>
+                <div class="Ms_star_image_div">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+            </div>
+            <% }) %>
+    </div>
+    <!--SECOND CONTAINER-->
+
+
+    <div id="head">
+        <h2>TOP GIFTS</h2>
+        <div id="line"></div>
+        <h3>
+            <a href="/product/random?item=Religious">
+                Make Room For New Gifts
+            </a>
+        </h3>
+    </div>
+    <div id="Ms_container_div">
+        <% high.forEach(function(element) { %>
+            <div class="Ms_item_div">
+                <div class="Ms_image_div">
+                    <a class="Bs_atag_Product" href="/shopitem/<%- element._id %>">
+                        <img src="<%= element.image %>" alt="">
+                    </a>
+                    <div class="Ms_slide_p">
+                        <div>
+                            <a href="/product/random?item=<%- element.category %>&sub=<%- element.sub_category %>">
+                                Similar Gifts
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="Ms_text_div">
+                    <div class="Ms_text_div_1">
+                        <p>
+                            <%= element.product %>
+                        </p>
+                        <p>
+                            <i class="fas fa-heart"></i>
+
+                        </p>
+                    </div>
+                    <div class="Ms_text_div_2">
+                        <p>MRP(incl gst)</p>
+                        <p>₹<%= element.price %>.00</p>
+                    </div>
+                </div>
+                <div class="Ms_star_image_div">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+            </div>
+            <% }) %>
+    </div>
+    </div>
+
+    <!--THIRD CONTAINER-->
+
+    <div id="head">
+        <h2>New Products</h2>
+        <div id="line"></div>
+        <h3>
+            <a href="/product/jewellery">
+                Make Room For New Gifts
+            </a>
+        </h3>
+    </div>
+    <div id="Ms_container_div">
+        <% jewellery.forEach(function(element) { %>
+            <div class="Ms_item_div">
+                <div class="Ms_image_div">
+                    <a class="Bs_atag_Product" href="/shopitem/<%- element._id %>">
+                        <img src="<%= element.image %>" alt="">
+                    </a>
+                    <div class="Ms_slide_p">
+                        <div>
+                            <a href="/product/random?item=<%- element.category %>&sub=<%- element.sub_category %>">
+                                Similar Gifts
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="Ms_text_div">
+                    <div class="Ms_text_div_1">
+                        <p>
+                            <%= element.product %>
+                        </p>
+                        <p>
+                            <i class="fas fa-heart"></i>
+
+                        </p>
+                    </div>
+                    <div class="Ms_text_div_2">
+                        <p>MRP(incl gst)</p>
+                        <p>₹<%= element.price %>.00</p>
+                    </div>
+                </div>
+                <div class="Ms_star_image_div">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+            </div>
+            <% }) %>
+    </div>
+    </div>
+    <!--footer-->
+
+    <div id="footer" style="margin-top:13%">
+        <%- include("../public/components/footer.html") %>
+    </div>
+</body>
+
+</html>
+<script type="module">
+
+    import navbar_responsive from "/scripts/header.js";
+    await navbar_responsive();
+
+</script>
+
+
+
+
+<!-- <script>
+
+var container = document.querySelector(".container");
+var image = [
+"https://style.giftcart.com/pub/media/allbanners/New_Year_2022.png",
+'https://style.giftcart.com/pub/media/allbanners/valentine-2.jpg',
+'https://style.giftcart.com/pub/media/allbanners/Roses.jpg',
+'https://style.giftcart.com/pub/media/allbanners/Hatke_Gifts.jpg',
+'https://style.giftcart.com/pub/media/allbanners/Birthday-1.jpg'
+]
+var index=0;
+function forward(){
+index++;
+if(index > image.length-1){
+  index=0;
+}
+container.style.backgroundImage = `url(${image[index]})`;
+}
+function backward(){
+index--;
+if(index < 0){
+  index = image.length - 1;
+}
+container.style.backgroundImage = `url(${image[index]})`;
+}
+</script> -->
+<script>
+    function functionDr(value) {
+        window.location.href = `/shopitem/${value}`;
+    }
+</script>
